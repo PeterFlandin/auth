@@ -1,6 +1,7 @@
 package edu.projetfinal.gestion_bibliotheque.entity;
 
 import java.util.Objects;
+import java.util.Optional;
 
 import jakarta.persistence.*;
 
@@ -75,5 +76,11 @@ public class Librarian {
 	public String toString() {
 		return "Librarian [id_Librarian=" + id_Librarian + ", login=" + login + ", password=" + password + "]";
 	}
+
+	public boolean isPresent() {
+		return false;
+	}
+
+
 	
 }
